@@ -2,11 +2,13 @@ do {
    var quantity = prompt('Вседите число', '');
    if (isNaN(quantity) === true) {
       alert('Введите число');
-   } else if (quantity <= 1) {
+    } else if (quantity === null) {
+      quantity = 10;
+    } else if (quantity <= 1) {
       alert('Введите число побольше');
-   } else if (quantity > 20) {
+    } else if (quantity > 20) {
       alert('Число слишком большое');
-   }
+    } 
 } while (isNaN(quantity) || quantity <= 1 || quantity > 20);
 
 var table = document.querySelector('.table');
