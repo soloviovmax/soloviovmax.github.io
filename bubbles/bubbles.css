@@ -21,6 +21,7 @@ body {
    transform: translate(-50%, -50%);
    background: rgb(red, green, blue);
    animation: size 1.5s ease-in-out;
+   pointer-events: none;
 }
 
 @keyframes size {
