@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
       blockLeft = document.querySelector('.blocks__item--left'),
 
       // Активный Класс
-      activeClass = 'blocks__item--active';
+      activeClass = 'blocks__item--active';    
 
   // Функция
   function menu(control, menu, activeClass) {
@@ -22,6 +22,19 @@ window.addEventListener('DOMContentLoaded', function () {
       isOpen = !isOpen;
       e.target.firstElementChild.innerText = (isOpen) ? 'Close' : 'Open';
       menu.classList.toggle(activeClass);
+
+      // Button active animation
+      posX = e.offsetX + 'px',
+      posY = e.offsetY + 'px',
+      bubble = document.createElement('div');
+      bubble.classList.add('button-bubble');
+      bubble.style.left = posX;
+      bubble.style.top = posY;
+      this.appendChild(bubble);
+      setTimeout(function () {
+        var delEl = control.children[1];
+        control.removeChild(delEl);
+      }, 400)
 
       // Изменение цвета body
       if (blockTop.classList.contains(activeClass)

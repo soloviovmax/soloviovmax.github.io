@@ -38,16 +38,25 @@ body {
                0 3px 1px -2px rgba(0,0,0,.2), 
                0 1px 5px 0 rgba(0,0,0,.12);
 }
-.button:before {
+.button span {
+   pointer-events: none;
+}
+.button-bubble {
    position: absolute;
    top: 0;
    left: 0;
-   background: rgba(255,255,255,.1);
+   background: rgba(255,255,255,.2);
    width: 50px;
    height: 50px;
    border-radius: 50%;
+   transform: translate(-50%, -50%);
+   animation: click .4s linear;
+   pointer-events: none;
 }
-
+@keyframes click {
+   from { transform: translate(-50%, -50%) scale(0)}
+   to { transform: translate(-50%, -50%) scale(10)}
+}
 /*
 *
 * Blocks
