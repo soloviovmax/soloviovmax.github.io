@@ -92,14 +92,13 @@ body {
    top: 0;
    left: 0;
    background: lightgrey;
-   display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    display: none;
 }
 .game-area__dialog--active {
-   display: block;
+   display: flex;
 }
 .game-area__dialog-text, .game-area__dialog-controls, .game-area__dialog-start-button {
    width: 80%;

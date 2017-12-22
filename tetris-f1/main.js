@@ -8,15 +8,22 @@ document.addEventListener('DOMContentLoaded', function() {
         startDialog = document.querySelector('.game-area__dialog');
 
     var userCarPosition = 240,
-        score = 0,
         gameIteration = 0,
         gameSpeed = 300;
 
         // Старт
         startBtn.addEventListener('click', function () {
 
-            startDialog.classList.remove('game-area__dialog--active');
+            var score = 0;
+            scoreField.textContent = '0';
 
+            startDialog.classList.remove('game-area__dialog--active');
+/* 
+            // ИНтервал для увеличения скорости
+            setInterval(function () {
+
+                
+            }, 5000); */
             var game = setInterval(function () {
 
                 if (gameIteration % 20 === 0) {
@@ -98,14 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (rivarCarPositionY === 80 && userCarPosition === rivarCarPositionX 
                         || rivarCarPositionY === 80 && userCarPosition === rivarCarPositionX - 20 
                         || rivarCarPositionY === 80 && userCarPosition === rivarCarPositionX + 20) {
-                        userCar.classList.add('game-area__user-car--crashed-top');
-                        clearInterval(game);
+                        clear();
                     } else if (rivarCarPositionY === 60 && userCarPosition === rivarCarPositionX + 40) {
-                        userCar.classList.add('game-area__user-car--crashed-left');
-                        clearInterval(game);
+                        clear();
                     } else if (rivarCarPositionY === 60 && userCarPosition === rivarCarPositionX - 40) {
-                        userCar.classList.add('game-area__user-car--crashed-right');
-                        clearInterval(game);
+                        clear();
                     } else if (rivarCarPositionY === -80) {
                         rivalCarsArea.removeChild(rivalCarsArea.firstElementChild);
                         score++;
@@ -113,6 +117,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                     rivalCars[i].style.bottom = (rivarCarPositionY - 20 + 'px');
                 }
+            }
+            
+            // Очистка после столкновения
+            function clear() {
+                    var carsNumber = rivalCarsArea.children.length;
+                for (var i = 0; i < carsNumber; i++) {
+                    rivalCarsArea.removeChild(rivalCarsArea.firstElementChild);
+                }
+                startDialog.classList.add('game-area__dialog--active');
+                clearInterval(game);
             }
         });
 });
