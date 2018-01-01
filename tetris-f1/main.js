@@ -11,6 +11,26 @@ document.addEventListener('DOMContentLoaded', function() {
         gameIteration = 0,
         gameSpeed = 300;
 
+        // Управление для User Car
+        var controls = window.addEventListener('keydown', function(ev) {
+            var userCarStyles = getComputedStyle(userCar);
+                userCarPosition = parseInt(userCarStyles.left);
+
+            if (ev.key === 'ArrowRight') {
+                if (userCarPosition !== 420) {
+                    userCarPosition += 20;
+                    userCar.style.left = (userCarPosition + 'px');
+                    console.log(userCarPosition);
+                }
+            } else if (ev.key === 'ArrowLeft') {
+                if (userCarPosition !== 0) {
+                    userCarPosition -= 20;
+                    userCar.style.left = (userCarPosition + 'px');
+                    console.log(userCarPosition);
+                }
+            }
+        });
+        
         // Старт
         startBtn.addEventListener('click', function () {
 
@@ -18,12 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scoreField.textContent = '0';
 
             startDialog.classList.remove('game-area__dialog--active');
-/* 
-            // ИНтервал для увеличения скорости
-            setInterval(function () {
 
-                
-            }, 5000); */
             var game = setInterval(function () {
 
                 if (gameIteration % 20 === 0) {
@@ -37,24 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 gameIteration++;
             }, 100);
 
-
-            // Управление для User Car
-            window.addEventListener('keydown', function(ev) {
-                var userCarStyles = getComputedStyle(userCar);
-                    userCarPosition = parseInt(userCarStyles.left);
-
-                if (ev.key === 'ArrowRight') {
-                    if (userCarPosition !== 420) {
-                        userCarPosition += 20;
-                        userCar.style.left = (userCarPosition + 'px');
-                    }
-                } else if (ev.key === 'ArrowLeft') {
-                    if (userCarPosition !== 0) {
-                        userCarPosition -= 20;
-                        userCar.style.left = (userCarPosition + 'px');
-                    }
-                }
-            });
 
             // Создание Rival Cars
             function createRival() {
