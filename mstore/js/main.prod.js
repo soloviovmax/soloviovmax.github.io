@@ -34,7 +34,7 @@ var AddProductItems = function () {
 
             var xhr = new XMLHttpRequest();
 
-            xhr.open('GET', '../db.json');
+            xhr.open('GET', 'https://soloviovmax.github.io/mstore/db.json');
 
             xhr.responseType = "json";
 
@@ -57,7 +57,7 @@ var AddProductItems = function () {
             this.btn.addEventListener('click', function () {
                 var xhr = new XMLHttpRequest();
 
-                xhr.open('GET', '../db.json');
+                xhr.open('GET', 'https://soloviovmax.github.io/mstore/db.json');
 
                 xhr.responseType = "json";
 
