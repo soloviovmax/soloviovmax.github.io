@@ -6,6 +6,14 @@
 	============================================ -->
 	<meta charset="UTF-8">
 	<title>MStore</title>
+	
+	<!-- Mobile specific metas
+	============================================ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon
+	============================================ -->
+	<link rel="shortcut icon" type="images/x-icon" href="img/favicon.iso">
 
 	<!-- Theme CSS
 	============================================ -->
@@ -48,7 +56,7 @@
 					<ul class="top-header__settings-list">
 						<li class="top-header__settings-item">
 							<span class="top-header__settings-item-title">Language:</span>
-							<button class="top-header__settings-item-button" title="Eanglish">ENG</button>
+							<button class="top-header__settings-item-button" title="English">ENG</button>
 						</li>
 
 						<li class="top-header__settings-item">
@@ -66,14 +74,8 @@
 
 				<!-- Logo -->
 				<div class="logo logo--bottom-header">
-					<a href="" class="logo__link"><img src="img/logo-mstore-dark.png" alt="MStore Logo" title="MStore" class="logo__img"></a>
+					<a href="" class="logo__link" title="MStore"><img src="img/logo-mstore-dark.png" alt="MStore Logo" class="logo__img logo__img--bottom-header"></a>
 				</div>
-
-				<!-- Burger Menu Btn -->
-				<button class="burger-btn">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-					<i class="fa fa-times" aria-hidden="true"></i>
-				</button>
 
 				<!-- Navigation -->
 				<nav class="header-nav">
@@ -90,10 +92,15 @@
 				<!-- User Panel -->
 				<div class="user-panel">
 					<ul class="user-panel__list">
-						<li class="user-panel__item">
+						<li class="user-panel__item user-panel__item--search">
 							<button class="user-panel__button user-panel__button--search" title="Search">
 								<i class="fa fa-search" aria-hidden="true"></i>
 							</button>
+
+							<form class="user-panel__search-form">
+								<input type="email" class="user-panel__search-input" placeholder="Search..." autofocus>
+								<button type="submit" class="user-panel__search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
 						</li>
 
 						<li class="user-panel__item">
@@ -103,19 +110,27 @@
 						</li>
 
 						<li class="user-panel__item">
-							<button class="user-panel__button user-panel__button--wishlist" title="Wishlist">
+							<button class="user-panel__button user-panel__button--heart" title="Hearts">
 								<i class="fa fa-heart-o" aria-hidden="true"></i>
+								<span class="user-panel__button-qty user-panel__button-qty--heart">0</span>
 							</button>
 						</li>
 						<li class="user-panel__item">
 							<button class="user-panel__button user-panel__button--shopping-cart" title="Shopping Cart">
 								<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-								<span class="user-panel__button-qty">0</span>
-								<span class="user-panel__button-total-price">$0.00</span>
+								<span class="user-panel__button-qty user-panel__button-qty--basket">0</span>
+								<span class="user-panel__button-total-price">$0.0</span>
 							</button>
 							
 						</li>
 					</ul>
+
+					<!-- Burger Menu Btn -->
+					<button class="burger-btn">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+						<!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+					</button>
+
 				</div><!-- ./User Panel -->
 			</div>
 		</div>
@@ -255,159 +270,11 @@
 			<!-- Feature Products -->
 			<ul class="feauture-product">
 
-				<!-- Product Item -->
-				<li class="product__item">
-					<img src="img/feauture-product-1.jpg" alt="product" class="product__img">
-					<div class="product-descr">
-						<h4 class="product__title"><a href="#" class="product__title-link">Abominable Hoodie</a></h4>
-						<span class="product__price">$40.00</span>
-						<div class="product__rating">
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-						</div>
-					</div>
-
-					<div class="product__details">
-						<ul class="product__details-list">
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-heart-o" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-search-plus" aria-hidden="true"></i>
-								</button>
-							</li>
-						</ul>
-					</div>
-				</li><!-- ./Product Item -->		
-
-				<!-- Product Item -->
-				<li class="product__item">
-					<img src="img/feauture-product-2.jpg" alt="product" class="product__img">
-					<div class="product-descr">
-						<h4 class="product__title"><a href="#" class="product__title-link">Abominable Hoodie</a></h4>
-						<span class="product__price">$40.00</span>
-						<div class="product__rating">
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-						</div>
-					</div>
-
-					<div class="product__details">
-						<ul class="product__details-list">
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-heart-o" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-search-plus" aria-hidden="true"></i>
-								</button>
-							</li>
-						</ul>
-					</div>
-				</li><!-- ./Product Item -->
-
-				<!-- Product Item -->
-				<li class="product__item">
-					<img src="img/feauture-product-3.jpg" alt="product" class="product__img">
-					<div class="product-descr">
-						<h4 class="product__title"><a href="#" class="product__title-link">Abominable Hoodie</a></h4>
-						<span class="product__price">$40.00</span>
-						<div class="product__rating">
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-						</div>
-					</div>
-
-					<div class="product__details">
-						<ul class="product__details-list">
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-heart-o" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-search-plus" aria-hidden="true"></i>
-								</button>
-							</li>
-						</ul>
-					</div>
-				</li><!-- ./Product Item -->
-
-				<!-- Product Item -->
-				<li class="product__item">
-					<img src="img/feauture-product-4.jpg" alt="product" class="product__img">
-					<div class="product-descr">
-						<h4 class="product__title"><a href="#" class="product__title-link">Abominable Hoodie</a></h4>
-						<span class="product__price">$40.00</span>
-						<div class="product__rating">
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-							<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
-						</div>
-					</div>
-
-					<div class="product__details">
-						<ul class="product__details-list">
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-heart-o" aria-hidden="true"></i>
-								</button>
-							</li>
-
-							<li class="product__details-item">
-								<button class="product__details-button">
-									<i class="fa fa-search-plus" aria-hidden="true"></i>
-								</button>
-							</li>
-						</ul>
-					</div>
-				</li><!-- ./Product Item -->
-				
 			</ul>
+
+			<div class="load-more-btn-wrap">
+				<button class="load-more-btn">Load more...</button>
+			</div>
 		</section>
 
 
@@ -477,6 +344,7 @@
 						<div class="product-descr">
 							<h4 class="product__title"><a href="#" class="product__title-link">Abominable Hoodie</a></h4>
 							<span class="product__price">$40.00</span>
+							<span class="product__old-price">$60.00</span>
 							<div class="product__rating">
 								<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
 								<button class="product__rating-button" tabindex='-1'><i class="fa fa-star" aria-hidden="true"></i></button>
@@ -589,7 +457,7 @@
 
 			<!-- Vertical Bunner -->
 			<div class="vertical-banner">
-				<a href="#" class="vertical-banner__link">
+				<a href="#" class="vertical-banner__link" title="Summer Sale">
 					<img src="img/summer-sale.jpg" alt="Summer Sale" class="vertical-banner__img">
 					<div class="vertical-banner__descr">
 						<div class="vertical-banner__title">Summer Sale</div>
@@ -684,8 +552,8 @@
 				</div>
 				
 				<form class="subscribe__form">
-					<input type="email" placeholder="Your email..." class="subscribe__form-input">
-					<input type="submit" class="subscribe__form-btn" value="submit">
+					<input type="email" placeholder="Your email..." class="subscribe__form-input" name="email">
+					<button type="submit" class="subscribe__form-btn">submit</button>
 				</form>
 			</div>
 		</div>
@@ -693,7 +561,7 @@
 	</main> <!-- /.maincontent -->
 
 
-	<!-- fOOTER SECTION
+	<!-- FOOTER SECTION
 	============================================ -->
 	<footer class="footer">
 		<div class="footer-container">
@@ -806,14 +674,75 @@
 				</div>
 
 				<!-- Google Map -->
-				<div class="footer__map">
-					<img src="img/map.jpg" alt="">
+				<div class="footer__map-wrap">
+					<div class="footer__map" id="map"></div>
 				</div>
 			</div>
 	</footer>
 
-<!-- script custom
+	<div class="fixed-nav"></div>
+
+	<!-- Product Item -->
+	<div class="product__item-clone">
+		<li class="product__item">
+			<img class="product__img">
+			<div class="product-descr">
+				<h4 class="product__title"><a href="#" class="product__title-link"></a></h4>
+				<span class="product__price"></span>
+				<div class="product__rating">
+					<button class="product__rating-button" tabindex='-1' title="Excellent"><i class="fa fa-star" aria-hidden="true"></i></button>
+					<button class="product__rating-button" tabindex='-1' title="Good"><i class="fa fa-star" aria-hidden="true"></i></button>
+					<button class="product__rating-button" tabindex='-1' title="Average"><i class="fa fa-star" aria-hidden="true"></i></button>
+					<button class="product__rating-button" tabindex='-1' title="Fair"><i class="fa fa-star" aria-hidden="true"></i></button>
+					<button class="product__rating-button" tabindex='-1' title="Poor"><i class="fa fa-star" aria-hidden="true"></i></button>
+				</div>
+			</div>
+
+			<div class="product__details">
+				<ul class="product__details-list">
+					<li class="product__details-item">
+						<button class="product__details-button product__details-button--basket" tabindex='-1'>
+							<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+						</button>
+					</li>
+
+					<li class="product__details-item">
+						<button class="product__details-button product__details-button--heart" tabindex='-1'>
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</button>
+					</li>
+
+					<li class="product__details-item">
+						<button class="product__details-button product__details-button--zoom" tabindex='-1'>
+							<i class="fa fa-search-plus" aria-hidden="true"></i>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</li><!-- ./Product Item -->
+	</div>
+
+	<div class="img-zoom-window">
+		<img class="img-zoom-window__img">
+	</div>
+
+	<script>
+      function initMap() {
+        let yuzhnyBriz = {lat: 46.96339, lng: 31.987823};
+        let map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: yuzhnyBriz
+        });
+        let marker = new google.maps.Marker({
+			 position: yuzhnyBriz,
+			 map: map,
+			 title: 'Южный бриз'
+        });
+      }
+    </script>
+<!-- scripts
 ============================================ -->
-<!-- <script src="js/main.js"></script> -->
+<script src="js/main.prod.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 </html>
