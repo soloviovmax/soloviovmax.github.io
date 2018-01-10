@@ -167,12 +167,9 @@ h1, h2, h3, h4, h5, h6, p {
 .social__item {
   width: 40px;
   height: 40px;
-  -webkit-transition: background .2s linear,
- border-color .2s linear;
-  -o-transition: background .2s linear,
- border-color .2s linear;
-  transition: background .2s linear,
- border-color .2s linear; }
+  -webkit-transition: background .2s linear, border-color .2s linear;
+  -o-transition: background .2s linear, border-color .2s linear;
+  transition: background .2s linear, border-color .2s linear; }
   .social__item:last-child {
     margin-right: 0; }
   .social__item:hover {
@@ -336,36 +333,6 @@ h1, h2, h3, h4, h5, h6, p {
 .works__item {
   width: 25%;
   overflow: hidden; }
-  @media screen and (max-width: 1500px) {
-    .works__item {
-      height: 300px; } }
-  @media screen and (max-width: 1220px) {
-    .works__item {
-      height: 250px; } }
-  @media screen and (max-width: 1102px) {
-    .works__item {
-      width: 50%;
-      height: 350px; } }
-  @media screen and (max-width: 900px) {
-    .works__item {
-      height: 300px; } }
-  @media screen and (max-width: 788px) {
-    .works__item {
-      height: 250px; } }
-  @media screen and (max-width: 596px) {
-    .works__item {
-      height: 210px; } }
-  @media screen and (max-width: 500px) {
-    .works__item {
-      height: 180px; } }
-  @media screen and (max-width: 430px) {
-    .works__item {
-      width: 100%;
-      height: 300px; } }
-  @media screen and (max-width: 380px) {
-    .works__item {
-      width: 100%;
-      height: 250px; } }
 
 .works__link {
   display: -webkit-box;
@@ -403,6 +370,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .works__img {
   width: 100%;
+  height: 100%;
   -webkit-transition: -webkit-transform .2s linear;
   transition: -webkit-transform .2s linear;
   -o-transition: transform .2s linear;
@@ -424,17 +392,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 14px;
   text-align: center;
   opacity: 0;
-  -webkit-transition: opacity .1s linear,
- -webkit-transform .2s linear;
-  transition: opacity .1s linear,
- -webkit-transform .2s linear;
-  -o-transition: transform .2s linear,
- opacity .1s linear;
-  transition: transform .2s linear,
- opacity .1s linear;
-  transition: transform .2s linear,
- opacity .1s linear,
- -webkit-transform .2s linear; }
+  -webkit-transition: opacity .1s linear, -webkit-transform .2s linear;
+  transition: opacity .1s linear, -webkit-transform .2s linear;
+  -o-transition: transform .2s linear, opacity .1s linear;
+  transition: transform .2s linear, opacity .1s linear;
+  transition: transform .2s linear, opacity .1s linear, -webkit-transform .2s linear; }
 
 .works__title {
   font-family: 'Raleway', sans-serif;
@@ -685,6 +647,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1.1rem; }
   .features, .team, .download {
     padding: 70px 15px; }
+  .works__item {
+    width: 50%; }
   .team__item {
     width: 40%; }
   .testimonials__column--left {
@@ -695,7 +659,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (max-width: 788px) {
   .nav {
-    width: 250px;
+    width: 200px;
     height: 100vh;
     padding: 25px;
     position: fixed;
@@ -799,6 +763,8 @@ h1, h2, h3, h4, h5, h6, p {
   .home__descr {
     font-size: 1rem; }
   .features__item {
+    width: 100%; }
+  .works__item {
     width: 100%; }
   .team__list {
     margin: -15px; }
