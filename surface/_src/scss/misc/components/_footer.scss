@@ -1,0 +1,21 @@
+.footer {
+	width: 100%;
+	@include bgOpacity($firstBg, .6);
+	position: relative;
+	z-index: 1; 
+}
+.container--footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__contact-link {
+	color: $colorWhite;
+	font-size: 1.25rem;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: color .1s linear;
+	&:hover {
+		color: $secondBg;
+	}
+}

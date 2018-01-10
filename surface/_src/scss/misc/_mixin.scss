@@ -1,0 +1,28 @@
+@mixin container {
+	width: 1530px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media screen and (max-width: 1540px) {
+		width: 1200px;
+	}
+	@media screen and (max-width: 1219px) {
+		width: 992px;
+	}
+	@media screen and (max-width: 1010px) {
+		width: 768px;
+	}
+	@media screen and (max-width: 786px) {
+		width: 576px;
+	}
+	@media screen and (max-width: 590px) {
+		width: 100%;
+	}
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bgOpacity($color, $opacity) {
+    background: rgba($color, $opacity);
+}

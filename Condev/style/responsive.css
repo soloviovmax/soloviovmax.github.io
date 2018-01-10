@@ -1,0 +1,50 @@
+/*
+home section height
+============
+*/
+@media screen and ( max-height: 1000px) {
+	.geometric-back {
+		transform-origin: top;
+		transform: scale(0.9);
+	}
+}
+
+@media screen and ( max-height: 900px) {
+	.geometric-back {
+		transform-origin: top;
+		transform: scale(0.8);
+	}
+}
+@media screen and ( max-height: 820px) {
+	.geometric-back {
+		transform-origin: top;
+		transform: scale(0.7);
+	}
+}
+@media screen and ( max-height: 730px) {
+	.geometric-back {
+		transform-origin: top;
+		transform: scale(0.6);
+	}
+}
+
+
+
+
+/*
+large screen
+============
+*/
+@media screen and ( max-width: 1920px) {
+
+}
+
+
+/*
+medium 
+============
+*/
+
+@media screen and ( max-width: 1650px) {
+
+}

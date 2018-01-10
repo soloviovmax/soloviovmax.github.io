@@ -1,0 +1,34 @@
+@media screen and ( max-width: 1700px) {
+	.works__item {
+	height: 400px;
+	}
+}
+@media screen and ( max-width: 1500px) {
+	.works__item {
+	height: 350px;
+	}
+}
+@media screen and ( max-width: 1300px) {
+	.works__item {
+	height: 300px;
+	}
+}
+
+
+/*
+large screen
+============
+*/
+@media screen and ( max-width: 1920px) {
+
+}
+
+
+/*
+medium 
+============
+*/
+
+@media screen and ( max-width: 1650px) {
+
+}

@@ -1,0 +1,58 @@
+.features {
+	@include container;
+	padding: $sectionPadding;
+}
+.features__list {
+	margin: 0 -15px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.features__item {
+	max-width: 330px;
+	padding: 15px;
+}
+.features__title {
+	color: #2d3033;
+	@include font('RalewayBold');
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 95px;
+	position: relative;
+	&:before {
+		content: '';
+		height: 60px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.features__title--customised:before {
+	background: url('../img/icons/features-icon-1.png') top center no-repeat;
+}
+.features__title--responsive {
+	background: url('../img/icons/features-icon-2.png') top center no-repeat;
+}
+.features__title--design {
+	background: url('../img/icons/features-icon-3.png') top center no-repeat;
+}
+.features__title--clean-code {
+	background: url('../img/icons/features-icon-4.png') top center no-repeat;
+}
+.features__title--ready-to-ship {
+	background: url('../img/icons/features-icon-5.png') top center no-repeat;
+}
+.features__title--download {
+	background: url('../img/icons/features-icon-6.png') top center no-repeat;
+}
+.features__descr {
+	color: #6c7279;
+	@include font('RalewayRegular');
+	font-size: 0.875rem;
+	line-height: 1.5em;
+	text-align: center;
+}

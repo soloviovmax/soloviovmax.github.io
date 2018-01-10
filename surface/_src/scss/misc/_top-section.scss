@@ -1,0 +1,62 @@
+.top-section {
+	width: 100%;
+	background: url('../img/football-bg.jpg') center center no-repeat;
+	background-size: cover;
+	position: relative;
+	&:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		@include bgOpacity($firstBg, .9);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.container--top-section {
+	position: relative;
+	z-index: 1;
+	height: 100vh;
+	min-height: 600px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-section__content {
+	width: 100%;
+	position: relative;
+}
+.top-section__title {
+	margin-bottom: 0;
+	color: $colorWhite;
+	font-size: 5.625rem;
+	font-weight: 700;
+	line-height: 1.11;
+	text-transform: uppercase;
+	letter-spacing: 4.5px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	&:before {
+		content: '';
+		height: 6px;
+		width: 405px;
+		background-color: $secondBg;
+		position: absolute;
+		top: 50%;
+		left: 13%;
+		z-index: -1;
+		transform: 	rotate(125deg)
+						translateY(-50%);
+	}
+	& div {
+		align-self: flex-end;
+		position: relative;
+		z-index: 1;
+	}
+}
+.btn-wrap--top-section {
+	padding-bottom: 110px;
+}

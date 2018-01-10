@@ -1,0 +1,151 @@
+// Contaiber
+.container {
+	@include container;
+}
+
+
+// Header
+.header {
+	width: 100%;
+	background: rgba(43, 46, 74, .95);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.container--header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+//Logo
+.logo {
+	box-sizing: content-box;
+	width: 189px;
+	height: 24px;
+	padding: 38px 0;
+	background: url('../img/logo.png') left center no-repeat;
+}
+.logo__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+// Navigation
+.nav {
+	width: 50%;
+}
+.nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.nav__link {
+	@include font('RalewayBold');
+	display: block;
+	color: rgba(255, 255, 255, .75);
+	font-size: 0.8125rem;
+	line-height: 1.15385em;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 0;
+	position: relative;
+	&:hover {
+		color: #fff;
+	}
+	&:before, &:after {
+		content: '';
+		width: 0;
+		height: 2px;
+		background: #fff;
+		position: absolute;
+		bottom: 0;
+		transition: width .1s linear;
+	}
+	&:before {
+		right: 0;
+	}
+	&:after {
+		left: 0;
+	}
+	&:hover:before, &:hover:after {
+		width: 50%;
+	} 
+}
+
+// Hamburger
+.hamburger__input {
+	display: none;
+}
+.hamburger__icon {
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: #fff;
+	position: fixed;
+	top: 9px;
+	right: 30px;
+	display: none;
+	z-index: 999;
+}
+
+
+// Button
+.btn-wrap {
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	min-width: 200px;
+	background: #e84545;
+	border-radius: 2px;
+	&:hover {
+		background: #e52e2e;
+	}
+}
+.btn__link {
+	display: block;
+	padding: 12.5px;
+	color: #fff;
+	@include font('RalewaySemiBold');
+	font-size: 0.8125rem;
+	line-height: 1.615385em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+
+// Social Buttons
+.social__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+.social__item {
+	width: 40px;
+	height: 40px;
+	transition: background .2s linear,
+					border-color .2s linear;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		background: #e52e2e;
+		border-color: #e52e2e;
+	}
+}
+.social__link {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 20px;
+}

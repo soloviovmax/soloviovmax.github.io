@@ -1,0 +1,42 @@
+.home {
+	background: url('../img/home-bg.jpg') center center no-repeat;
+	background-size: cover;
+	position: relative;
+	&:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: rgba(43, 46, 74, .95);
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+.container--home {
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	display: flex;
+}
+
+.home__content {
+	width: 80%;
+	margin: auto;
+}
+.home__title {
+	margin-bottom: 45px;
+	color: #fff;
+	@include font('OpenSansBold');
+	font-size: 4.0625rem;
+	line-height: 1.0923em;
+	text-transform: uppercase;
+	text-align: center;
+}
+.home__descr {
+	margin-bottom: 80px;
+	@include font('RalewayRegular');
+	color: #fff;
+	font-size: 1.375rem;
+	line-height: 1.5em;
+	text-align: center;
+}
