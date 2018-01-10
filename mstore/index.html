@@ -46,8 +46,8 @@
 				<!-- Top Header Contacts -->
 				<address class="top-header__address">
 					<ul class="top-header__address-list">
-						<li class="top-header__address-item"><a href="tel:+84898058000" class="top-header__address-link">(+84).898.058.000</a></li>
-						<li class="top-header__address-item"><a href="mailto:min101092@gmail.com" class="top-header__address-link">min101092@gmail.com</a></li>
+						<li class="top-header__address-item"><a href="tel:+380638279215" class="top-header__address-link">(+380) 63 82 79 215</a></li>
+						<li class="top-header__address-item"><a href="mailto:solovyov.amron@gmail.com" class="top-header__address-link">solovyov.amron@gmail.com</a></li>
 					</ul>		
 				</address>
 
@@ -96,17 +96,31 @@
 							<button class="user-panel__button user-panel__button--search" title="Search">
 								<i class="fa fa-search" aria-hidden="true"></i>
 							</button>
-
+							
+							<!-- Search Form -->
 							<form class="user-panel__search-form">
 								<input type="email" class="user-panel__search-input" placeholder="Search..." autofocus>
 								<button type="submit" class="user-panel__search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-							</form>
+							</form><!-- ./Search Form -->
 						</li>
 
-						<li class="user-panel__item">
+						<li class="user-panel__item user-panel__item--login">
 							<button class="user-panel__button user-panel__button--user" title="My profile">
 								<i class="fa fa-user-circle-o" aria-hidden="true"></i>
 							</button>
+
+							<!-- Login Form -->
+							<div class="user-panel__login-form-wrap">
+								<button class="user-panel__login-switches-btn">Sign in</button>
+								<button class="user-panel__login-switches-btn user-panel__login-switches-btn--nonactive">Register</button>
+
+								<form class="user-panel__login-form">
+									<input type="email" name="email" class="user-panel__login-input" placeholder="Email" autofocus required>
+									<input type="password" name="password" class="user-panel__login-input" placeholder="Password" required>
+									<input type="password" name="confirmPassword" class="user-panel__login-input user-panel__login-input--confirm-password" placeholder="Confirm password">
+									<button type="submit" class="user-panel__login-btn">Login</button>
+								</form>
+							</div><!-- ./Login Form -->
 						</li>
 
 						<li class="user-panel__item">
@@ -308,6 +322,7 @@
 					<div class="read-more-link-wrap read-more-link-wrap--about-us">
 						<a href="#" class="read-more-link">discover</a>
 					</div>
+
 				</div>
 				<div class="column column--about-us column--about-us--right">
 					<img src="img/mstore.jpg" alt="MStore" class="about-us__img">
@@ -465,6 +480,7 @@
 					</div>
 				</a>
 			</div>
+
 		</div>
 
 		<!-- BLOG SECTION
@@ -495,6 +511,7 @@
 						<div class="read-more-link-wrap read-more-link-wrap--about-us">
 							<a href="#" class="read-more-link">Read More</a>
 						</div>
+
 					</div>
 				</li><!-- ./Blog Item -->
 
@@ -515,6 +532,7 @@
 						<div class="read-more-link-wrap read-more-link-wrap--about-us">
 							<a href="#" class="read-more-link">Read More</a>
 						</div>
+
 					</div>
 				</li><!-- ./Blog Item -->
 
@@ -535,9 +553,9 @@
 						<div class="read-more-link-wrap read-more-link-wrap--about-us">
 							<a href="#" class="read-more-link">Read More</a>
 						</div>
+
 					</div>
 				</li><!-- ./Blog Item -->
-
 			</ul>
 		</section>
 
@@ -551,10 +569,13 @@
 					<p class="subscribe__descr">We only send emails once a month and only about good things.</p>		
 				</div>
 				
+				<!-- Subscribe form -->
 				<form class="subscribe__form">
-					<input type="email" placeholder="Your email..." class="subscribe__form-input" name="email">
+					<input type="email" placeholder="Your email..." class="subscribe__form-input" name="email" id="subscribe-input">
+					<div class="subscribe__form-btn--preloader"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
+					<div class="subscribe__form-btn--sent"><i class="fa fa-check" aria-hidden="true"></i></div>
 					<button type="submit" class="subscribe__form-btn">submit</button>
-				</form>
+				</form><!-- ./Subscribe form -->
 			</div>
 		</div>
 
@@ -574,26 +595,28 @@
 
 					<p class="footer__mstore-descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
+					<!-- Footer address -->
 					<address class="footer__mstore-address">
 						<div class="footer__mstore-contacts">
 							<ul class="footer__mstore-contacts-list">
 								<li class="footer__mstore-contacts-item">
 									<span class="footer__mstore-contacts-title">Adress:</span>
-									<a href="" class="footer__mstore-contacts-link">Hanoi, Vietnamese</a>
+									<a href="" class="footer__mstore-contacts-link">Mykolaiv, Ukraine</a>
 								</li>
 
 								<li class="footer__mstore-contacts-item">
 									<span class="footer__mstore-contacts-title">Phone:</span>
-									<a href="tel:+084898058000" class="footer__mstore-contacts-link">(+084) 898.058.000</a>
+									<a href="tel:+380638279215" class="footer__mstore-contacts-link">(+380) 63 82 79 215</a>
 								</li>
 
 								<li class="footer__mstore-contacts-item">
-									<span class="footer__mstore-contacts-title">Mail:</span>
-									<a href="mailto:min101092@gmail.com" class="footer__mstore-contacts-link">min101092@gmail.com</a>
+									<span class="footer__mstore-contacts-title">Email:</span>
+									<a href="mailto:solovyov.amron@gmail.com" class="footer__mstore-contacts-link">solovyov.amron@gmail.com</a>
 								</li>
 							</ul>
 						</div>
 
+						<!-- Social buttons -->
 						<div class="social-buttons">
 							<ul class="social-buttons__list">
 								<li class="social-buttons__item">
@@ -620,8 +643,8 @@
 									<a href="#" title="Behance" class="social-buttons__link"><i class="fa fa-behance" aria-hidden="true"></i></a>
 								</li>
 							</ul>
-						</div>
-					</address>
+						</div><!-- ./Social buttons -->
+					</address><!-- ./Footer address -->
 				</div>
 
 				<!-- Footer Information -->
@@ -677,13 +700,16 @@
 				<div class="footer__map-wrap">
 					<div class="footer__map" id="map"></div>
 				</div>
+
 			</div>
 	</footer>
+
+
 
 	<div class="fixed-nav"></div>
 
 	<!-- Product Item -->
-	<div class="product__item-clone">
+	<ul class="product__item-clone">
 		<li class="product__item">
 			<img class="product__img">
 			<div class="product-descr">
@@ -707,7 +733,8 @@
 					</li>
 
 					<li class="product__details-item">
-						<button class="product__details-button product__details-button--heart" tabindex='-1'>
+						<button class="fa-stack product__details-button product__details-button--heart" tabindex='-1'>
+							<i class="fa fa-heart" aria-hidden="true"></i>
 							<i class="fa fa-heart-o" aria-hidden="true"></i>
 						</button>
 					</li>
@@ -720,29 +747,29 @@
 				</ul>
 			</div>
 		</li><!-- ./Product Item -->
-	</div>
+	</ul>
 
 	<div class="img-zoom-window">
-		<img class="img-zoom-window__img">
+		<img alt="Zoom Image" class="img-zoom-window__img">
 	</div>
 
-	<script>
-      function initMap() {
-        let yuzhnyBriz = {lat: 46.96339, lng: 31.987823};
-        let map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: yuzhnyBriz
-        });
-        let marker = new google.maps.Marker({
-			 position: yuzhnyBriz,
-			 map: map,
-			 title: 'Южный бриз'
-        });
-      }
-    </script>
+<script>
+	function initMap() {
+		let yuzhnyBriz = {lat: 46.96339, lng: 31.987823};
+		let map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 17,
+			center: yuzhnyBriz
+		});
+		let marker = new google.maps.Marker({
+			position: yuzhnyBriz,
+			map: map,
+			title: 'Южный бриз'
+		});
+	}
+</script>
 <!-- scripts
 ============================================ -->
 <script src="js/main.prod.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK0IJRwaadXYwpGQdpZwrGyMJuZHBDdEQ&callback=initMap"></script>
 </body>
 </html>
