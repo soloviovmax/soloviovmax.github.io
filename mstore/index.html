@@ -755,6 +755,41 @@
 		<img alt="Zoom Image" class="img-zoom-window__img">
 	</div>
 
+	<!-- Site Info -->
+	<aside class="site-info">
+		<h2 class="site-info__title">Site Info</h2>
+
+		<h3 class="site-info__title">General:</h3>
+		
+		<ul class="site-info__list">
+			<li class="site-info__item">HTML5/CSS3</li>
+			<li class="site-info__item">Responsive Design</li>
+			<li class="site-info__item">Vanilla JS was used only (ES6 + Babel)</li>
+			<li class="site-info__item">Crossbrowsing (IE11+)</li>
+			<li class="site-info__item">BEM Naming</li>
+		</ul>
+
+		<h3 class="site-info__title">Features:</h3>
+	
+		<ul class="site-info__list">
+			<li class="site-info__item">Ajax loading from local json file for 'Feauture Product'</li>
+			<li class="site-info__item">Events for 'Add to busket', 'Like', 'Zoom' and 'Stars' buttons</li>
+			<li class="site-info__item">'Add to busket' button count qty and total price and save it in Local Storage</li>
+			<li class="site-info__item">Subscribe form sends input.value to Firebase</li>
+		</ul>		
+
+		<h3 class="site-info__title">Have questions?</h3>
+		<address class="site-info__adress">
+			<a href="tel:+380638279215" class="site-info__address-link">+(380) 63 82 79 215</a>
+			<a href="mailto:solovyov.amron@gmail.com" class="site-info__address-link">solovyov.amron@gmail.com</a>
+		</address>
+
+		<button class="site-info__label">
+			<i class="fa fa-info-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+		</button>
+	</aside><!-- ./Site Info -->
+
 <script>
 	function initMap() {
 		let yuzhnyBriz = {lat: 46.96339, lng: 31.987823};
@@ -771,7 +806,7 @@
 </script>
 <!-- scripts
 ============================================ -->
-<script src="js/main.js"></script>
+<script src="js/main.prod.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK0IJRwaadXYwpGQdpZwrGyMJuZHBDdEQ&callback=initMap"></script>
 </body>
 </html>
