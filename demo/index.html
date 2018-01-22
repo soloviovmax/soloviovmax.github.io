@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<style>
+	body {
+		min-height: 300vh;
+		background: linear-gradient(182deg, #93caea, #4a92bb);
+		background-size: 400% 400%;
+		animation: AnimationName 30s linear;
+	}
+	@keyframes AnimationName { 
+		0%{background-position:51% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:51% 0%}
+		}
+	.btn {
+		position: fixed;
+		top: 60%;
+		left: 0;
+		width: 50px;
+		height: 200px;
+		transition: width .2s linear;
+	}
+	.btn:hover {
+		width: 300px;
+	}
+</style>
+<body>
+	<button class="btn">Button</button>
+</body>
+</html>
