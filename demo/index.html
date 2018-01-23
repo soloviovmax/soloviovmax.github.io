@@ -16,19 +16,69 @@
 		50%{background-position:50% 100%}
 		100%{background-position:51% 0%}
 		}
-	.btn {
+	.wrap {
 		position: fixed;
 		top: 60%;
 		left: 0;
-		width: 50px;
 		height: 200px;
-		transition: width .2s linear;
+		display: flex;
 	}
-	.btn:hover {
+	.btn {
+		width: 50px;
+		height: 100%;
+	}
+	.div {
 		width: 300px;
+		background: rebeccapurple;
+		display: none;
+	}
+	.btn:hover + .div {
+		display: block;
+	}
+	.div:hover {
+		display: block;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		padding: 20px;
+		position: relative;
+	}
+	li:hover {
+		background-color: rgba(255, 255, 255, .5);
+	}
+	.show {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 200px;
+		height: 150px;
+		background-color: #fff;
+		z-index: 10;
+		display: none;
+	}
+	li:hover .show {
+		display: block;
+		overflow: hidden;
 	}
 </style>
 <body>
-	<button class="btn">Button</button>
+	<div class="wrap">
+			<button class="btn">Button</button>
+			<div class="div">
+				<ul>
+					<li><div class="title">Item 1</div>
+						<div class="show">Item</div>
+					</li>
+
+					<li><div class="title">Item 2</div>
+						<div class="show">Item</div>
+					</li>
+				</ul>
+			</div>
+	</div>
 </body>
 </html>
