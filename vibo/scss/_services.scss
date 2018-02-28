@@ -1,0 +1,54 @@
+.services {
+   @include container;
+   @include sectionContainer;
+}
+.services__list {
+   @include list;
+   display: flex;
+   flex-wrap: wrap;
+   margin: -15px;
+}
+.services__item {
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 15px 15px 15px 135px;
+   position: relative;
+   @include md-screen {
+      width: 100%;
+   }
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+   &:before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 105px;
+      height: 80px;
+   }
+}
+.services__item--1:before {
+   background: url('../img/distribution.svg') no-repeat;
+}
+.services__item--2:before {
+   background: url('../img/transport.svg') no-repeat;
+}
+.services__item--3:before {
+   background: url('../img/people.svg') no-repeat;
+}
+.services__item--4:before {
+   background: url('../img/container.svg') no-repeat;
+}
+.services__item--5:before {
+   background: url('../img/delivery-truck.svg') no-repeat;
+}
+.services__item-title {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+.services__item-descr {
+   margin-bottom: 5px;
+   text-indent: 25px;
+}

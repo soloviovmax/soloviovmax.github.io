@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: $darkColor;
+    font-family: Helvetica, 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    background: $bodyBg;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+.maincontent{
+    flex-grow: 1;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.container {
+    @include container;
+}

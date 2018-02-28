@@ -1,0 +1,42 @@
+.clients {
+   /* background: lighten($headerBg, 75%); */
+   padding: 50px 0;
+}
+.clients__list {
+   @include list;
+   @include container;
+   margin: -20px auto;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.clients__item {
+   width: 25%;
+   height: 100px;
+   padding: 20px;
+
+   @include md-screen {
+      width: 33.33%;
+   }
+   @include sm-screen {
+      width: 50%;
+   }
+   @media screen and (max-width: 500px) {
+      width: 100%;
+   }
+}
+.clients__link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+.clients__logo {
+   max-width: 200px;
+   max-height: 75px;
+   filter: grayscale(100%);
+   transition: filter .2s linear;
+   &:hover {
+      filter: none;
+   }
+}
