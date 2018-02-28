@@ -43,6 +43,10 @@
    width: 100%;
    padding: 15px;
    cursor: pointer;
+
+   &:hover {
+      background: lighten($headerBg, 70%);
+   }
 }
 .contacts__item-address {
    height: 100%;
