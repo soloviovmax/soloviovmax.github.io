@@ -16,6 +16,7 @@
    background: lighten($headerBg, 75%);
 }
 .about-us__statistic-title {
+   margin-bottom: 30px;
    font-size: 23px;
    color: $darkColor;
    text-align: center;
@@ -31,8 +32,17 @@
    display: flex;
    align-items: center;
    flex-direction: column;
+   text-align: center;
 }
 .about-us__statistic-number {
    font-size: 35px;
    color: $darkColor;
+   margin-bottom: 15px;
+   flex-grow: 1;
+   & div {
+      font-size: 25px;
+   }
+}
+.about-us__statistic-descr {
+   font-size: 20px;
 }

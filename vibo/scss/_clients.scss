@@ -5,15 +5,15 @@
 .clients__list {
    @include list;
    @include container;
-   margin: -20px auto;
+   margin: -25px auto;
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
 }
 .clients__item {
-   width: 25%;
+   width: 33.33%;
    height: 100px;
-   padding: 20px;
+   padding: 25px;
 
    @include md-screen {
       width: 33.33%;
