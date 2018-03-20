@@ -1,8 +1,8 @@
-.clients {
+.partners {
    background: lighten($headerBg, 75%);
    padding: 50px 0;
 }
-.clients__list {
+.partners__list {
    @include list;
    @include container;
    margin: -25px auto;
@@ -10,8 +10,8 @@
    justify-content: space-around;
    flex-wrap: wrap;
 }
-.clients__item {
-   width: 33.33%;
+.partners__item {
+   width: 25%;
    height: 100px;
    padding: 25px;
 
@@ -25,13 +25,13 @@
       width: 100%;
    }
 }
-.clients__link {
+.partners__link {
    display: flex;
    align-items: center;
    justify-content: center;
    height: 100%;
 }
-.clients__logo {
+.partners__logo {
    max-width: 200px;
    max-height: 75px;
    filter: grayscale(100%);

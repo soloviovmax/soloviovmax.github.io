@@ -22,12 +22,14 @@
    text-align: center;
 }
 .about-us__statistic-list {
+   margin: -15px;
    @include list;
    display: flex;
    justify-content: space-around;
 }
 .about-us__statistic-item {
    width: 20%;
+   padding: 15px;
    color: $darkColor;
    display: flex;
    align-items: center;
@@ -38,11 +40,11 @@
    font-size: 35px;
    color: $darkColor;
    margin-bottom: 15px;
-   flex-grow: 1;
+   min-height: 65px;
    & div {
-      font-size: 25px;
+      font-size: 22px;
    }
 }
 .about-us__statistic-descr {
-   font-size: 20px;
+   font-size: 16px;
 }
