@@ -5,15 +5,15 @@
 .partners__list {
    @include list;
    @include container;
-   margin: -25px auto;
+   margin: -15px auto;
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
 }
 .partners__item {
    width: 25%;
-   height: 100px;
-   padding: 25px;
+   height: 130px;
+   padding: 15px;
 
    @include md-screen {
       width: 33.33%;
@@ -21,7 +21,10 @@
    @include sm-screen {
       width: 50%;
    }
-   @media screen and (max-width: 500px) {
+   @media screen and (max-width: 520px) {
+      height: 110px;
+   }
+   @media screen and (max-width: 400px) {
       width: 100%;
    }
 }
@@ -33,10 +36,15 @@
 }
 .partners__logo {
    max-width: 200px;
-   max-height: 75px;
+   max-height: 70px;
    filter: grayscale(100%);
    transition: filter .2s linear;
    &:hover {
       filter: none;
+   }
+
+   @media screen and (max-width: 525px) {
+      max-width: 150px;
+      max-height: 55px;
    }
 }
