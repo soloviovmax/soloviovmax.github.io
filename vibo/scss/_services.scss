@@ -16,6 +16,13 @@
    @include md-screen {
       width: 100%;
    }
+   @include sm-screen {
+      padding-left: 110px;
+   }
+   @include xs-screen {
+      padding-left: 15px;
+      margin-bottom: 10px;
+   }
 
    &:last-child {
       margin-bottom: 0;
@@ -27,6 +34,13 @@
       left: 15px;
       width: 105px;
       height: 80px;
+      @include sm-screen {
+         width: 80px;
+         height: 60px;
+      }
+      @include xs-screen {
+         display: none;
+      }
    }
 }
 .services__item--1:before {

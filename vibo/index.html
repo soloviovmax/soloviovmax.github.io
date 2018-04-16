@@ -51,21 +51,30 @@
 	<header class="header">
 		<div class="container container--header">
 			<div class="logo">
-				<a href="#" class="logo_link" title="Vibo Trans"></a>
+				<a href="/" class="logo_link" title="Vibo Trans"></a>
 			</div>
 
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-					<li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
-					<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+					<li class="nav__item"><button data-anker="about-us" class="nav__btn">О нас</button></li>
+					<li class="nav__item"><button data-anker="services" class="nav__btn">Услуги</button></li>
+					<li class="nav__item"><button data-anker="contacts" class="nav__btn">Контакты</button></li>
 				</ul>
 			</nav>
 
-			<address class="header-address">
-				<a href="mailto:vibotrans@com.od.ua" class="header-address__link">vibotrans@com.od.ua</a>
-				<a href="tel:+380482331965" class="header-address__link">+380 (482) 33 19 65</a>
+			<address class="header__address">
+				<a href="mailto:vibotrans@com.od.ua" class="header-address__link header-address__link--email">vibotrans@com.od.ua</a>
+				<a href="tel:+380482331965" class="header-address__link header-address__link--phone">+380 (482) 33 19 65</a>
 			</address>
+
+			<div class="header__hamburger">
+				<button>
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 0h24v24H0z" fill="none"/>
+						<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+					</svg>
+				</button>
+			</div>
 		</div>
 	</header>
 
@@ -77,7 +86,7 @@
 			</div>
 		</section>
 		
-		<section class="about-us">
+		<section class="about-us" id="about-us">
 			<div class="container">
 				<!-- Section title -->
 				<div class="section-title-wrap">
@@ -139,7 +148,7 @@
 						<p class="services__item-descr">Данный комплекс расположен на левом берегу Днепро-Бугского лимана и позволяет осуществлять погрузку и подход судов с осадкой до 10,3 м по Бугско-Днепровско-лиманскому каналу в акватории специализированного морского порта "Ольвия".</p>						
 					</li>
 
-					<li class="services__item  services__item--7">
+					<li class="services__item services__item--7">
 						<h3 class="services__item-title">Реализация минеральных удобрений</h3>
 						<p class="services__item-descr">Имея глубокие и долгосрочные партнерские отношения с сельскохозяйственными предприятиями Украины, наша компания активно развивает трейдинг в области минеральных удобрений. Основными поставщиками минеральных удобрений, с которыми ООО "Вибо-Транс" имеет действующие контракты, являются как украинские, так и зарубежные предприятия, а именно: ПАО "Днепроазот", Одесский припортовый завод, АО "Минудобрения" г.Россошь, АО "СДС Азот", АО "ОХК "Уралхим", ОХК "Щекиноазот", Grupa Azoty Zaklady Azotowe «Pulawy» и другие.</p>
 						<p class="services__item-descr">Продукция поставляется в адрес крупных агрохолдингов Украины, а также оптовым и мелкооптовым предприятиям внутреннего рынка страны, для её дальнейшей реализации конечным потребителям.</p>
@@ -161,6 +170,13 @@
 					<li class="services__item services__item--3">
 						<h3 class="services__item-title">Деятельность таможенного брокера</h3>
 						<p class="services__item-descr">Наша компания предлагает Вам комплекс услуг по таможенному оформлению грузов. Лицензированные брокеры (Регистрационный номер в Реестре таможенных брокеров -  серии АВ № 542344 от 03.09.2010 г.) решат все вопросы, возникающие при получении разрешительных документов, а также обеспечат качественное и своевременное оформление Вашего груза.</p>
+					</li>
+
+					<li class="services__item services__item--7">
+						<h3 class="services__item-title">Поставка и реализация неорганических пигментов</h3>
+						<p class="services__item-descr">Уже более 10 лет наша компания поставляет и реализует на рынке Украины такие продукты неорганической химии как Диоксид титана и Железоокисные пигменты. На сегодняшний день, ООО «Вибо-Транс» является официальным дистрибьютором Чешской компании «PRECHEZA a.s.», входящей в тройку крупнейших производителей диоксида титана и железоокисных пигментов в странах CEFTA. Кроме этого, постоянно осуществляется поставка двуокиси титана таких Тайваньских и Китайских производителей как: «Henan Billions Chemicals Co. Ltd.», «PANGANGTITANIUM INDUSTRY CO. LTD», «Yunnan Xinli Nonfarrous Metal Co. Ltd», «Panzhihua Dongfang Titanium Industry Co. Ltd».</p>
+						<p class="services__item-descr">Сотрудники нашей компании, предложат Вашим технологам наиболее подходящие марки Диоксида титана в соответствии с требованиями Вашего производства и получения желаемого результата и предложат образцы продукции для проведения испытаний.</p>
+						<p class="services__item-descr">Для обеспечения стабильного снабжения наших постоянных клиентов на складах нашей Компании поддерживается постоянно оборачиваемый запас наиболее востребованных марок Диоксида титана. Продукция поставляется только в адрес конечных потребителей. Отгрузка осуществляется как машинными нормами, так и минимальными нормами, соответствующими одной упаковке.</p>						
 					</li>
 
 					<li class="services__item services__item--4">
@@ -228,6 +244,20 @@
 				
 				<div class="contacts__columns-wrap">
 					<ul class="contacts__city-list">
+						<li class="contacts__city-item">
+
+							<button class="contacts__item-btn">Киев</button>
+
+							<address class="contacts__item-address">
+								<a href="#" class="contacts__item-link">08162, Киевская обл. с. Чабаны <br> ул. Машиностроительная 1-А</a>
+
+								<div>Отдел продаж:</div>
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">s.vavilov@vibo-trans.od.ua</a>	
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">akonev@vibo-trans.od.ua </a>	
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">dze@vibo-trans.od.ua</a>
+								<a href="tel:+380482331966" class="contacts__item-link">+380 (50) 416 52 25</a>
+							</address>
+						</li>
 
 						<li class="contacts__city-item contacts__city-item--open">
 
@@ -245,24 +275,7 @@
 								<a href="tel:+380482331966" class="contacts__item-link">+380 (48) 716 89 49</a>
 								<a href="tel:+380482331966" class="contacts__item-link -fax">+380 (48) 716 89 50</a>								
 							</address>
-						</li>
-
-						<li class="contacts__city-item">
-
-							<button class="contacts__item-btn">Южный</button>
-
-							<address class="contacts__item-address">
-								<a href="#" class="contacts__item-link">65481, ул.Заводская 3-А, каб.216,217</a>
-								<a href="tel:+380482331966" class="contacts__item-link -fax">+380 (48) 759 32 98</a>
-								<div>Отдел агентирования:</div>
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">agency@vibo-trans.od.ua</a>									
-								<a href="tel:+380482331965" class="contacts__item-link">+380 (48) 758 69 62</a>
-								
-								<div>Отдел экспедирования:</div>
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">forwarding@vibo-trans.od.ua</a>									
-								<a href="tel:+380482331965" class="contacts__item-link">+380 (48) 758 69 20</a>
-							</address>
-						</li>
+						</li>		
 
 						<li class="contacts__city-item">
 
@@ -285,16 +298,18 @@
 
 						<li class="contacts__city-item">
 
-							<button class="contacts__item-btn">Киев</button>
+							<button class="contacts__item-btn">Южный</button>
 
 							<address class="contacts__item-address">
-								<a href="#" class="contacts__item-link">08162, Киевская обл. с. Чабаны <br> ул. Машиностроительная 1-А</a>
-
-								<div>Отдел продаж:</div>
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">s.vavilov@vibo-trans.od.ua</a>	
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">akonev@vibo-trans.od.ua </a>	
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">dze@vibo-trans.od.ua</a>
-								<a href="tel:+380482331966" class="contacts__item-link">+380 (50) 416 52 25</a>
+								<a href="#" class="contacts__item-link">65481, ул.Заводская 3-А, каб.216,217</a>
+								<a href="tel:+380482331966" class="contacts__item-link -fax">+380 (48) 759 32 98</a>
+								<div>Отдел агентирования:</div>
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">agency@vibo-trans.od.ua</a>									
+								<a href="tel:+380482331965" class="contacts__item-link">+380 (48) 758 69 62</a>
+								
+								<div>Отдел экспедирования:</div>
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">forwarding@vibo-trans.od.ua</a>									
+								<a href="tel:+380482331965" class="contacts__item-link">+380 (48) 758 69 20</a>
 							</address>
 						</li>
 					</ul>
@@ -356,11 +371,9 @@
 				btn.parentElement.classList.toggle(openClass);	
 			});
 		});
-	
-	
-	
 	</script>
 
 	<script async src="https://maps.googleapis.com/maps/api/js?&callback=initMap"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

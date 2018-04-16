@@ -1,7 +1,7 @@
 .header {
    width: 100%;
    background: $headerBg;
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    padding: 10px 0;
@@ -17,10 +17,29 @@
    text-decoration: none;
    color: $darkColor;
    display: block;
-   width: 250px;
+   width: 55px;
    height: 50px;
-   background: url(../logo+name.svg) center center no-repeat;
+   background: url(../vibo-trans-logo.svg) center center no-repeat;
    background-size: cover;
+   @media screen and (min-width: 597px) {
+      width: 250px;
+      background: url(../logo+name.svg) center center no-repeat;
+      background-size: cover;
+	}
+}
+
+.nav {
+   @include sm-screen {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      display: none;
+      padding: 20px;
+      background: #000;
+   }
+   &--active {
+      display: block;
+   }
 }
 .nav__list {
    margin: 0;
@@ -28,6 +47,9 @@
    display: flex;
    justify-content: center;
    list-style: none;
+   @include sm-screen {
+      flex-direction: column;
+   }
 }
 .nav__item {
    margin-right: 20px;
@@ -35,12 +57,15 @@
       margin-right: 0;
    }
 }
-.nav__link {
+.nav__btn {
    display: block;
    text-decoration: none;
    padding: 20px 2px;
    color: $whiteColor;
    position: relative;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
    &:before, &:after {
       content: '';
       position: absolute;
@@ -63,7 +88,7 @@
       background: #414154;
    }
 }
-.header-address {
+.header__address {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -74,7 +99,48 @@
    color: $whiteColor;
    padding: 5px;
    border-radius: 3px;
+   display: block;
+   width: 100%;
+   font-size: 14px;
    &:hover, &:active {
       background: #414154;
+   }
+   &--phone,
+   &--email {
+      position: relative;
+      padding-left: 30px;
+      display: block;
+      &:before {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 5px;
+         transform: translateY(-50%);
+         height: 20px;
+         width: 20px;
+      }
+   }
+   &--phone:before {
+      background: url(../img/ic_phone_black_24px.svg);
+   }
+   &--email:before {
+      background: url(../img/ic_mail_outline_black_24px.svg);
+   }
+}
+.header__hamburger {
+   display: none;
+   @include sm-screen {
+      display: none;
+   }
+   & button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      & svg {
+         fill: #fff;
+         height: 30px;
+         width: 30px;
+      }
    }
 }

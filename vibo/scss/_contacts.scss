@@ -1,6 +1,7 @@
 .contacts {
    @include container;
    @include sectionContainer;
+   text-align: center;
 }
 .section-title-wrap--contacts {
    margin-bottom: 20px;
@@ -17,9 +18,9 @@
    display: flex;
    flex-direction: column;
 
-   @include sm-screen {
+   @include md-screen {
       width: 100%;
-      height: 400px;
+      height: 500px;
       margin-bottom: 20px;
    }
 }
@@ -63,7 +64,6 @@
 }
 .contacts__item-link {
    margin-bottom: 5px;
-   /* display: block; */
    text-decoration: none;
    color: $darkColor;
    padding: 2px;
@@ -71,15 +71,6 @@
    &:last-child {
       margin-bottom: 0;
    }
-   /* &:before {
-      content: '';
-      height: 20px;
-      width: 30px;
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%);
-   } */
    &.-fax {
       &:before {
          content: "fax";
@@ -89,25 +80,12 @@
       }
    }
 }
-/* .contacts__item-link--location:before {
-   background: url('../img/ic_location_on_black_24px.svg') no-repeat;
-}
-.contacts__item-link--email:before {
-   background: url('../img/ic_email_black_24px.svg') no-repeat;
-}
-.contacts__item-link--phone:before {
-   background: url('../img/ic_phone_black_24px.svg') no-repeat;
-}
- */
-
-
-
 
 .map {
    width: 50%;
    height: 500px;
    
-   @include sm-screen {
+   @include md-screen {
       width: 100%;
    }
 }

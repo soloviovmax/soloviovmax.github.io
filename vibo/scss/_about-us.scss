@@ -20,12 +20,16 @@
    font-size: 23px;
    color: $darkColor;
    text-align: center;
+   @include sm-screen {
+      font-size: 20px;
+   }
 }
 .about-us__statistic-list {
    margin: -15px;
    @include list;
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
 }
 .about-us__statistic-item {
    width: 20%;
@@ -35,12 +39,24 @@
    align-items: center;
    flex-direction: column;
    text-align: center;
+   @include lg-screen {
+      width: 25%;
+   }
+   @include sm-screen {
+      width: 50%;
+   }
+   @media (max-width: 450px) {
+      width: 100%;
+   }
 }
 .about-us__statistic-number {
    font-size: 35px;
    color: $darkColor;
    margin-bottom: 15px;
    min-height: 65px;
+   @media (max-width: 450px) {
+      min-height: auto;
+   }
    & div {
       font-size: 22px;
    }
