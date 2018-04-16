@@ -1,8 +1,47 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
+    let counterIsComplite = false;
+
    ankers();
    hamburger();
+
+   const section = document.querySelector('.about-us__statistic');
+
+   window.addEventListener('scroll', function(e) {
+    if (section.getBoundingClientRect().top <= window.innerHeight) {
+        !counterIsComplite && animateNumber();
+        counterIsComplite = true;
+    };  
+   });
+
+   window.addEventListener('click', function(e) {
+    if (!e.target.classList.contains('nav') && !e.target.classList.contains('header__hamburger-btn')
+    && !e.target.parentElement.classList.contains('header__hamburger-btn')
+    && !e.target.parentElement.parentElement.classList.contains('header__hamburger-btn')
+    && document.querySelector('.nav--active')) {
+        document.querySelector('.nav--active').classList.remove('nav--active');
+    }; 
+   });
+};
+
+function animateNumber() {
+    const numbers = document.querySelectorAll('.about-us__statistic-number > span');
+
+    for (let i = 0; i < numbers.length; i++) {
+        let finiteNumber = parseInt(numbers[i].textContent),
+            startNumber = Math.round((finiteNumber / 3) * 2),
+            numbersDifference = finiteNumber - startNumber,
+            time = 3000 / numbersDifference;
+
+        for (let n = 0; n <= numbersDifference; n++) {
+            setTimeout(() => {
+            
+            numbers[i].textContent = n + startNumber;
+
+            }, time * n);
+        };
+    };
 };
 
 function ankers() {

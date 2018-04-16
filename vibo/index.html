@@ -68,7 +68,7 @@
 			</address>
 
 			<div class="header__hamburger">
-				<button>
+				<button class="header__hamburger-btn">
 					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<path d="M0 0h24v24H0z" fill="none"/>
 						<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
@@ -109,22 +109,22 @@
 
 					<ul class="about-us__statistic-list">
 						<li class="about-us__statistic-item">
-							<div class="about-us__statistic-number">245</div>
+							<div class="about-us__statistic-number"><span>245</span></div>
 							<div class="about-us__statistic-descr">Отработанных судозаходов</div>
 						</li>
 
 						<li class="about-us__statistic-item">
-							<div class="about-us__statistic-number">4,88 <div>млн. тонн</div></div>
+							<div class="about-us__statistic-number"><span>4880</span> <div>тис. тонн</div></div>
 							<div class="about-us__statistic-descr">Проэкспедированных грузов</div>
 						</li>
 
 						<li class="about-us__statistic-item">
-							<div class="about-us__statistic-number">2090</div>
+							<div class="about-us__statistic-number"><span>2090</span></div>
 							<div class="about-us__statistic-descr">Оформленных таможенных деклараций</div>
 						</li>
 
 						<li class="about-us__statistic-item">
-							<div class="about-us__statistic-number">160 <div>тыс. тонн</div></div>
+							<div class="about-us__statistic-number"><span>160</span> <div>тыс. тонн</div></div>
 							<div class="about-us__statistic-descr">Реализованных минеральных удобрений</div>
 						</li>
 					</ul>
@@ -244,21 +244,6 @@
 				
 				<div class="contacts__columns-wrap">
 					<ul class="contacts__city-list">
-						<li class="contacts__city-item">
-
-							<button class="contacts__item-btn">Киев</button>
-
-							<address class="contacts__item-address">
-								<a href="#" class="contacts__item-link">08162, Киевская обл. с. Чабаны <br> ул. Машиностроительная 1-А</a>
-
-								<div>Отдел продаж:</div>
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">s.vavilov@vibo-trans.od.ua</a>	
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">akonev@vibo-trans.od.ua </a>	
-								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">dze@vibo-trans.od.ua</a>
-								<a href="tel:+380482331966" class="contacts__item-link">+380 (50) 416 52 25</a>
-							</address>
-						</li>
-
 						<li class="contacts__city-item contacts__city-item--open">
 
 							<button class="contacts__item-btn">Одесса</button>
@@ -275,7 +260,22 @@
 								<a href="tel:+380482331966" class="contacts__item-link">+380 (48) 716 89 49</a>
 								<a href="tel:+380482331966" class="contacts__item-link -fax">+380 (48) 716 89 50</a>								
 							</address>
-						</li>		
+						</li>	
+
+						<li class="contacts__city-item">
+
+							<button class="contacts__item-btn">Киев</button>
+
+							<address class="contacts__item-address">
+								<a href="#" class="contacts__item-link">08162, Киевская обл. с. Чабаны <br> ул. Машиностроительная 1-А</a>
+
+								<div>Отдел продаж:</div>
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">s.vavilov@vibo-trans.od.ua</a>	
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">akonev@vibo-trans.od.ua </a>	
+								<a href="mailto:vibotrans@com.od.ua" class="contacts__item-link">dze@vibo-trans.od.ua</a>
+								<a href="tel:+380482331966" class="contacts__item-link">+380 (50) 416 52 25</a>
+							</address>
+						</li>	
 
 						<li class="contacts__city-item">
 
@@ -374,6 +374,6 @@
 	</script>
 
 	<script async src="https://maps.googleapis.com/maps/api/js?&callback=initMap"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.prod.js"></script>
 </body>
 </html>

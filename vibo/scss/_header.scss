@@ -7,6 +7,7 @@
    padding: 10px 0;
    font-weight: 200;
    z-index: 9;
+   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 .container--header {
    display: flex;
@@ -34,7 +35,7 @@
       right: 0;
       top: 100%;
       display: none;
-      padding: 20px;
+      padding: 30px;
       background: #000;
    }
    &--active {
@@ -56,6 +57,9 @@
    &:last-child {
       margin-right: 0;
    }
+   @include sm-screen {
+         margin-right: 0;
+   }
 }
 .nav__btn {
    display: block;
@@ -66,6 +70,9 @@
    background-color: transparent;
    border: none;
    cursor: pointer;
+   @include sm-screen {
+      padding: 20px 10px;
+   }
    &:before, &:after {
       content: '';
       position: absolute;
@@ -74,6 +81,9 @@
       background: $whiteColor;
       width: 0;
       transition: width .2s linear;
+      @include sm-screen {
+            display: none;
+      }
    }
    &:before {
       right: 50%;
@@ -130,7 +140,7 @@
 .header__hamburger {
    display: none;
    @include sm-screen {
-      display: none;
+      display: block;
    }
    & button {
       background-color: transparent;
