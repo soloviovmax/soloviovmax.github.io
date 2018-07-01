@@ -1,0 +1,40 @@
+.icon {
+   & img {
+      position: absolute;
+      size: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+}
+.img-wrap {
+   position: relative;
+   size: 40px;
+   min-width: 40px;
+   font-size: 0;
+   border-radius: 50%;
+   background: rgba(0, 0, 0, .05);
+   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+   transition: box-shadow .2s linear;
+   cursor: pointer;
+   &:hover {
+      box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
+   }
+}
+.pop-up {
+   size: 150px;
+   display: flex;
+   flex-wrap: wrap;
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   background: #fff;
+   z-index: 9;
+   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+   border-radius: 5px;
+   cursor: default;
+   .img-wrap {
+      margin: 5px;
+   }
+}
