@@ -57,12 +57,12 @@ class ToDoItemIcon extends Component {
       
       return (
          <div className="icon img-wrap" onClick={this.openPopup}>
-            { icon && <img src={`/icons/${icon}.svg`} alt={icon} /> }
+            { icon && <img src={`./icons/${icon}.svg`} alt={icon} /> }
             {
                isOpen && <div className="pop-up">
                   {
                      icons.map(i => {
-                        return <div className="img-wrap" key={i} onClick={() => this.setNewIcon(i)} ><img src={`/icons/${i}.svg`} alt={i} /></div>
+                        return <div className="img-wrap" key={i} onClick={() => this.setNewIcon(i)} ><img src={`./icons/${i}.svg`} alt={i} /></div>
                      })
                   }
                </div>
@@ -73,6 +73,7 @@ class ToDoItemIcon extends Component {
 }
 ToDoItemIcon.propTypes = {
    icon: PropTypes.string,
+   iconIsHidden: PropTypes.bool,
 }
 
 export default onClickOutside(ToDoItemIcon);
