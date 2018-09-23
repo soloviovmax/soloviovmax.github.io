@@ -1,0 +1,22 @@
+.figure {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+   padding: 25px 35px;
+   @media (max-width: 1200px) {
+      padding: 20px;
+   }
+   img {
+      height: 46px;
+      margin-bottom: 10px;
+   }
+   figcaption {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.42px;
+      text-align: center;
+   }
+}

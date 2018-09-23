@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'normalize-css/normalize.css';
+
+* {
+   box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+body {
+   min-width: 320px;
+}
+
+@font-face {
+   font-family: 'Belgrad';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Lato Light'), local('Lato-Light'),
+        url(./fonts/Belgrad/Belgrad.woff) format('woff'),
+        url(./fonts/Belgrad/Belgrad.woff2) format('woff2');
+}
+@font-face {
+   font-family: 'Bernadette';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Lato Light'), local('Lato-Light'),
+        url(./fonts/Bernadette/Bernadette.woff) format('woff'),
+        url(./fonts/Bernadette/Bernadette.woff2) format('woff2');
+}
+@font-face {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Lato Light'), local('Lato-Light'),
+        url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Light.woff) format('woff'),
+        url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Light.woff2) format('woff2');
+}
+@font-face {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 500;
+   src: local('Lato Medium'), local('Lato-Medium'),
+        url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Medium.woff) format('woff'),
+        url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Medium.woff2) format('woff2');
+}
+@font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Lato Bold'), local('Lato-Bold'),
+             url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Bold.woff) format('woff'),
+             url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Bold.woff2) format('woff2');
+     }
+@font-face {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 900;
+   src: local('Lato Black'), local('Lato-Black'),
+        url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Black.woff) format('woff'),
+        url(./fonts/Lato/LatoLatin/fonts/LatoLatin-Black.woff2) format('woff2');
+}
+
+body {
+	font-family: 'Lato';
+	font-weight: 400;
+}

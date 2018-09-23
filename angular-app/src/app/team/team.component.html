@@ -1,0 +1,11 @@
+<section class="team">
+  <app-container>
+    <h2 class="title">We are Perfect Team</h2>
+    <p class="description"></p>
+    <ul class="team-list">
+      <li class="team-item" *ngFor="let person of team">
+        <app-team-card [person]="person"></app-team-card>
+      </li>
+    </ul>
+  </app-container>
+</section>

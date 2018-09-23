@@ -1,0 +1,167 @@
+.about-us {
+   margin-top: -200px;
+   .cards-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+   .cards-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+   }
+   .cards-item {
+      width: 33.33%;
+      min-width: 290px;
+      padding: 10px;
+   }
+}
+
+.columns-wrap {
+   padding: 100px 0;
+   display: flex;
+   position: relative;
+   @media (max-width: 900px) {
+      flex-direction: column;
+   }
+   &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url(/assets/img/A.png) center center no-repeat;
+      background-size: 36%;
+      @media (max-width: 1200px) {
+         background-size: 24%;
+      }
+      @media (max-width: 900px) {
+         display: none;
+      }
+   }
+   .column {
+      width: 50%;
+      @media (max-width: 900px) {
+         width: 100%;
+      }
+   }
+   .column-left {
+      padding-right: 18%;
+      @media (max-width: 1200px) {
+         padding-right: 12%;
+      }
+      @media (max-width: 900px) {
+         padding-right: 0;
+      }
+   }
+   .column-right {
+      padding-left: 18%;
+      @media (max-width: 1200px) {
+         padding-left: 14%;
+      }
+      @media (max-width: 900px) {
+         padding-left: 0;
+      }
+   }
+}
+.section-title {
+   color: #333;
+   font-family: Bernadette;
+   font-size: 50px;
+   font-weight: 400;
+   letter-spacing: -1.58px;
+   margin: 0 0 30px 0;
+   @media (max-width: 1200px) {
+      font-size: 45px;
+   }
+   @media (max-width: 900px) {
+      font-size: 45px;
+   }
+}
+.title-descr {
+   color: #040404;
+   font-family: Lato;
+   font-size: 18px;
+   line-height: 1.4;
+   letter-spacing: 0.45px;
+   font-weight: 300;
+   span {
+      font-weight: 400;
+   }
+   @media (max-width: 700px) {
+      font-size: 16px;
+   }
+}
+.button-wrap {
+   @media (max-width: 900px) {
+      text-align: center;
+   }
+}
+.quote {
+   color: #040404;
+   font-family: Lato;
+   font-size: 18px;
+   font-style: italic;
+   line-height: 1.4;
+   letter-spacing: 0.45px;
+   padding-top: 50px;
+   margin-bottom: 30px;
+   position: relative;
+   @media (max-width: 900px) {
+      padding-left: 60px;
+      padding-top: 0;
+      margin-top: 50px;
+   }
+   @media (max-width: 700px) {
+      font-size: 16px;
+      margin-top: 30px;
+      padding-left: 50px;
+   }
+   &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100px;
+      width: 83px;
+      height: 88px;
+      background: url(/assets/img/quote-icon.png) center center no-repeat;
+      @media (max-width: 1200px) {
+         width: 60px;
+         height: 60px;
+         background-size: contain;
+         left: -72px;
+         top: 11px;
+      }
+      @media (max-width: 900px) {
+         left: 0;
+         top: 0;
+         width: 50px;
+         height: 50px;
+      }
+      @media (max-width: 700px) {
+         width: 40px;
+         height: 40px;
+      }
+   }
+}
+.quote-author {
+   color: #333;
+   font-family: Bernadette;
+   font-size: 47px;
+   font-weight: 400;
+   letter-spacing: -1.58px;
+   text-align: center;
+   @media (max-width: 900px) {
+      font-size: 38px;
+   }
+}

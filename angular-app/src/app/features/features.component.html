@@ -1,0 +1,14 @@
+<section class="features">
+  <app-container>
+    <ul class="features-list">
+      <li *ngFor="let img of imgs" class="features-item">
+        <img [src]="img" alt="">
+      </li>
+    </ul>
+    <div class="features-content">
+      <h2 class="title">Amazing features</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <app-button class="-gradient">Read more</app-button>
+    </div>
+  </app-container>
+</section>

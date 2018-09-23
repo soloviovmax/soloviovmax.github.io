@@ -1,0 +1,29 @@
+<section class="about-us">
+  <div class="cards-wrap">
+    <ul class="cards-list">
+      <drag-scroll>
+        <li drag-scroll-item class="cards-item" *ngFor="let card of aboutUsCardsList">
+            <app-about-us-card [card]="card" (btnOnClick)="openCardModal($event)"></app-about-us-card>
+        </li>
+      </drag-scroll>
+    </ul>
+  </div>
+  <app-container>
+    <div class="columns-wrap">
+      <div class="column column-left">
+        <h2 class="section-title">We are <br/> Creative Agency</h2>
+        <p class="title-descr"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+        <div class="button-wrap">
+          <app-button class="-gradient">Read more</app-button>
+        </div>
+      </div>
+      <div class="column column-right">
+        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="quote-author">Anita Allen</div>
+      </div>
+    </div>
+  </app-container>
+  <app-modal *ngIf="modalIsVisible" (onClose)="closeCardModal()">
+    <app-about-us-card [card]="modalCard" [fullCard]="true"></app-about-us-card>
+  </app-modal>
+</section>

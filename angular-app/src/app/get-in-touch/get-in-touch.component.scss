@@ -1,0 +1,86 @@
+.get-in-touch {
+   background-color: #000;
+   background: linear-gradient(to right, rgba(222, 129, 60, 0.82) 0%, rgba(63, 81, 154, 0.82) 100%);
+   box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+   .bg {
+      padding: 50px 0;
+      background: url(/assets/img/get-in-touch-bg.png) center center no-repeat;
+      background-size: cover;
+   }
+}
+.section-title {
+   color: #fff;
+   font-family: Bernadette;
+   font-size: 50px;
+   font-weight: 400;
+   letter-spacing: -1.58px;
+   text-align: center;
+   margin: 10px 0 30px 0;
+   @media (max-width: 1200px) {
+      font-size: 45px;
+   }
+}
+.address {
+   font-style: normal;
+}
+.social-icons-list {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+   padding: 0;
+   list-style: none;
+   @media (max-width: 420px) {
+      justify-content: center;
+   }
+}
+.social-icons-item {
+   padding: 18px;
+   @media (max-width: 445px) {
+      width: 21%;
+      padding: 20px 15px;
+   }
+}
+.icon-wrap {
+   position: relative;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   @media (max-width: 1200px) {
+      width: 40px;
+      height: 40px;
+   }
+   @media (max-width: 700px) {
+      width: 25px;
+      height: 25px;
+   }
+   @media (max-width: 420px) {
+      margin: 0 auto;
+   }
+   &:before {
+      content: '';
+      width: 80px;
+      height: 80px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 1200px) {
+         width: 60px;
+         height: 60px;
+      }
+      @media (max-width: 700px) {
+         width: 45px;
+         height: 45px;
+      }
+   }
+}
+.icon {
+   max-width: 100%;
+   max-height: 100%;
+}

@@ -1,0 +1,47 @@
+.footer {
+   padding: 50px 0;
+}
+.address {
+   font-style: normal;
+}
+.address-list {
+   margin: 0 -15px;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   justify-content: space-between;
+}
+.address-item {
+   padding: 15px;
+   figure {
+      display: flex;
+   }
+   .img-wrap {
+      margin-right: 30px;
+      img {
+         width: 100%;
+      }
+   }
+   figcaption {
+      display: flex;
+      flex-direction: column;
+      max-width: 225px;
+   }
+   .address-title {
+      margin-bottom: 5px;
+      color: #494949;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.42px;
+   }
+   .address-link {
+      color: #494949;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      text-decoration: none;
+      line-height: 24px;
+   }
+}
