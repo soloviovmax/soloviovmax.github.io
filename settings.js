@@ -1,0 +1,1 @@
+export const sortTypesList = ['Recent', 'Saved date', 'Nickname'];

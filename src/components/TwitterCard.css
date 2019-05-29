@@ -1,0 +1,19 @@
+.card {
+   max-width: 500px;
+   margin: 0 auto 20px auto;
+}
+.card-content {
+   text-align: center;
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+}
+.card-img {
+   margin-bottom: 20px;
+   max-height: 500px;
+}
+.card-text {
+   text-align: left;
+}
+.card-button-link {
+   text-decoration: none;
+}
